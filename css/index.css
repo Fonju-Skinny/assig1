@@ -1,0 +1,224 @@
+* 
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  transition: all .3s ease-in-out;
+}
+/* Root Variables =========> */
+:root
+{
+    --white:#fff;
+    --black:#000;
+    --sub-white:#ffffff76;
+    --sub-black:#00000076;
+    --orangered:#ff4500;
+    --sub-orangered:#ff440076;
+    --border1:1px solid #ff4500;
+    --box-shadow1:0 0 50px #08080864 ;
+}
+html
+{
+  scroll-behavior: smooth;
+}
+body
+{
+  display: block;
+}
+.section{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top:var(--border1) ;
+  background-color: #000;
+  color: var(--white);
+}
+/* <!-- HERO SECTION ===============================> --> */
+.hero 
+{
+  /* background: ; */
+  position: relative;
+}
+.hero .header
+{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* background: blue; */
+  display: block;
+}
+/* Extreme top ==============================>  */
+.hero .header .extreme-top
+{
+  background: #090909;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px 0 ;
+
+}
+.hero .header .extreme-top .logo
+{
+  color: var(--white);
+  margin-left: 20px;
+}
+.hero .header .extreme-top .logo b{
+  color: var(--orangered);
+}
+.hero .header .extreme-top .top-right-end
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin: 0 20px;
+}
+.hero .header .extreme-top .top-right-end .btn
+{
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: var(--white);
+  background: var(--orangered);
+}
+.hero .header .extreme-top .top-right-end .edge
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.hero .header .extreme-top .top-right-end .edge p
+{
+  opacity: .5;
+}
+/*  top nav ==============================>  */
+
+.hero .header .top-nav
+{
+  background: #000;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+/*  top nav logo =================>  */
+.hero .header .top-nav .logo
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 0 10px;
+  /* background: black; */
+}
+
+.hero .header .top-nav .logo .logo-image
+{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+/*  top nav navigation =================>  */
+
+.hero .header .top-nav .nav
+{
+  /* width: ; */
+  /* background: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.hero .header .top-nav .nav ul
+{
+  /* background: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.hero .header .top-nav .nav ul a
+{
+  color: var(--white);
+  opacity: .5;
+  font-size: 18px;
+  text-transform: capitalize;
+
+}
+.hero .header .top-nav .nav ul a:hover
+{
+  opacity: 1;
+}
+
+/*  top nav btns =================>  */
+.hero .header .top-nav .nav .header-btns
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.hero .header .top-nav .nav .header-btns{
+  /* background: var(--orangered); */
+}
+
+.hero .header .top-nav .nav .header-btns .header-btn
+{
+  border: 1px solid var(--white);
+  color: var(--white);
+  padding: 5px 20px;
+  border-radius: 30px;
+  background: none;
+  opacity: .6;
+}
+.hero .header .top-nav .nav .header-btns .header-btn:hover
+{
+  opacity: 1;
+}
+.hero .header .top-nav .nav .header-btns .header-btn.two
+{
+  background: var(--orangered);
+  border: none;
+}
+.hero .header .top-nav .nav .header-btns .header-btn.two:hover
+/* {
+  background: none;
+  border: 1px solid var(--white);
+
+} */
+/* <!-- SERVICES SECTION ===============================> --> */
+
+/* <!-- PROJECTS SECTION ===============================> --> */
+
+/* <!-- ABOUT US SECTION ===============================> --> */
+
+/* <!-- CONTACT US SECTION ===============================> --> */
+
+/* <!-- FAGS SECTION ===============================> --> */
+
+/* <!-- BLOGS SECTION ===============================> --> */
+
+/* <!-- GALLERY SECTION ===============================> --> */
+
+/* <!-- FOOTER SECTION ===============================> --> */
+
+
+
+
+
+
+/* <!-- RESPONSIVE SECTION START ===============================> --> */
+
+/* <!-- RESPONSIVE SECTION ENDS===============================> --> */
