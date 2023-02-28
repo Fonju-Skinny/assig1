@@ -47,20 +47,26 @@ body {
 .hero .header {
   width: 100%;
   position: fixed;
-  top: 0;
+  top: -300px;
   left: 0;
-  /* background: blue; */
   display: block;
   z-index: 100;
 }
+.hero .header.scroll-header{
+  top: 0;
+}
+
 /* Extreme top ==============================>  */
 .hero .header .extreme-top {
-  background: var(--background2);
+  background: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
   border-bottom: var(--border1);
+}
+.header.scroll-header .extreme-top{
+  background: var(--background2);
 }
 .hero .header .extreme-top .logo {
   color: var(--white);
@@ -73,22 +79,23 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* margin: 20px; */
   padding: 0 5px;
-  background: var(--background2);
+  background:none;
   width:400px;
   height: 30px;
   position: relative;
 }
+.header.scroll-header .extreme-top .top-right-end{
+  background: var(--background2);
+}
 .hero .header .extreme-top .top-right-end .btn 
 {
-  /* padding: 5px 20px; */
   border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--white);
-  background: var(--orangered);
+  background:var(--orangered);
   width: 100px;
   height: 30px;
   position: absolute;
@@ -162,12 +169,15 @@ i.chev-left:hover, i.chev-right:hover  {
 /*  top nav ==============================>  */
 
 .hero .header .top-nav {
-  background: var(--background2);
+  background: none;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
+}
+.header.scroll-header .top-nav{
+  background: var(--background2);
 }
 /*  top nav logo =================>  */
 .hero .header .top-nav .logo {
@@ -194,8 +204,6 @@ i.chev-left:hover, i.chev-right:hover  {
 /*  top nav navigation =================>  */
 
 .hero .header .top-nav .nav {
-  /* width: ; */
-  /* background: red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,22 +212,25 @@ i.chev-left:hover, i.chev-right:hover  {
 }
 
 .hero .header .top-nav .nav ul {
-  /* background: red; */
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  /* z-index: 99; */
   padding: 0;
+  background: none;
+}
+.header.scroll-header .top-nav .nav ul{
   background: var(--background2);
 }
 .hero .header .top-nav .nav ul .nav-list {
   position: relative;
-  /* flex-direction: column; */
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  background: none;
+}
+.header.scroll-header .top-nav .nav ul .nav-list{
   background: var(--background2);
 }
 .hero .header .top-nav .nav ul .nav-list a {
@@ -245,6 +256,7 @@ i.chev-left:hover, i.chev-right:hover  {
   z-index: -1;
   opacity: 0;
 }
+/* .header.scroll-header */
 .hero .header .top-nav .nav ul .nav-list:hover ul.drop-down {
   top: 55px;
   opacity: 1;
@@ -281,7 +293,6 @@ i.chev-left:hover, i.chev-right:hover  {
   background: var(--white);
   content: "";
   position: absolute;
-  /* bottom: -10px; */
   width: 10px;
   height: 2px;
 }
@@ -289,7 +300,6 @@ i.chev-left:hover, i.chev-right:hover  {
   background: var(--white);
   content: "";
   position: absolute;
-  /* bottom: -10px; */
   width: 10px;
   height: 2px;
   transition: 0.3s ease-in-out;
